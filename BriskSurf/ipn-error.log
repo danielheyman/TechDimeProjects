@@ -1,0 +1,23 @@
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: item_name in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 23
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: item_number in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 24
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: payment_status in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 25
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: mc_gross in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 26
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: mc_currency in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 27
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: txn_id in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 28
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: receiver_email in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 29
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: payer_email in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 30
+[22-Jan-2014 10:16:13 America/New_York] PHP Notice:  Undefined index: custom in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 31
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: item_name in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 23
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: item_number in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 24
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: payment_status in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 25
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: mc_gross in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 26
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: mc_currency in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 27
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: txn_id in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 28
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: receiver_email in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 29
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: payer_email in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 30
+[22-Jan-2014 10:16:57 America/New_York] PHP Notice:  Undefined index: custom in /Users/danielheyman/Dropbox/Develop/Code/brisksurf/ipn.php on line 31
+[05-Feb-2014 09:21:42 America/New_York] Invalid HTTP request method.
+[12-Feb-2014 09:55:50 America/New_York] Invalid HTTP request method.
+[12-Feb-2014 09:59:39 America/New_York] Invalid HTTP request method.
+[13-Feb-2014 12:43:07 America/New_York] Invalid HTTP request method.
+[21-Sep-2014 23:25:28 America/New_York] Invalid HTTP request method.

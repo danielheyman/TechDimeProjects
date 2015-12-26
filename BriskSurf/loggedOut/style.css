@@ -1,0 +1,257 @@
+/*
+bgGrey = #f1f1f1
+red = #c74e4e
+darkred = #c54545
+darkerred = #b43232
+green = #87b24d
+darkgreen = #78a43e
+darkergreen = #65902c
+textGrey = #454545
+*/
+
+
+body{
+    margin:0;
+    padding:0;
+    font-family:Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color:#454545;
+    font-size:11pt;
+}
+
+#header{
+    height:70px;
+    min-width:900px;
+    -moz-box-shadow:0 0 3px #000;
+	-webkit-box-shadow:0 0 3px #000;
+	box-shadow:0 0 3px #000;
+}
+
+#header .logo{
+    width:900px;
+    background-image:url(images/logo.png);
+    background-repeat:no-repeat;
+    background-position:center left;
+    height:70px;
+    margin:auto;
+    background-size:130px;
+}
+
+#header .logo .click{
+    width:130px;
+    cursor:pointer;
+    height:70px;
+    z-index:1;
+    position:absolute;
+}
+
+#bgGrey{
+    position:absolute;
+    height:400px;
+    background:#f1f1f1;
+    width:100%;
+    z-index:-1;
+    min-width:900px;
+}
+
+#content{
+    width:900px;
+    margin:auto;
+    margin-bottom:30px;
+}
+
+#content .header{
+    text-align:center;
+    margin:30px 0;
+    font-weight:bold;
+    font-size:20pt;
+}
+
+#content .subtext{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#content .table .one, #content .table .two, #content .table .three{
+    width:240px;
+    padding:30px;
+    padding-bottom:0px;
+    background:#c74e4e;
+    /*height:320px;*/
+    color:#fff;
+    float:left;
+}
+
+#content .table .one, #content .table .three{
+    background:#c74e4e;
+}
+
+#content .table .two{
+    background:#c54545;
+}
+
+#content .table .one{
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+}
+
+#content .table .three{
+    border-top-right-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+#content .table .title{
+    text-align:center;
+    font-size:13pt;
+}
+
+#content .table .content{
+    text-align:justify;
+    min-height:125px;
+}
+
+#content .table .one .image{
+    background-image:url(images/track.png);   
+}
+
+#content .table .two .image{
+    background-image:url(images/target.png);   
+}
+
+#content .table .three .image{
+    background-image:url(images/results.png);   
+}
+
+#content .table .image{
+    background-repeat:no-repeat;
+    background-position:center center;   
+    height:200px;
+}
+
+#content .table{
+    overflow:hidden;
+    margin-bottom:30px;   
+}
+
+#content .signup{
+    background:#f1f1f1;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    border-radius: 10px; 
+    padding:30px;
+    text-align:center;
+}
+
+#content .signup .title{
+    margin-bottom:20px;
+}
+
+#content .error{
+    margin-bottom:20px;
+    color:#c74e4e;
+}
+
+#content .success{
+    color:#87b24d;
+    margin-bottom:20px;
+}
+
+#content .signup .form{
+    display:inline-block;
+    margin:auto;
+}
+
+#content .form input, #content .form select, .button{
+    border:0;
+    border-radius:5px;
+    background:#87b24d;
+    color:#fff;
+    padding:10px;
+    margin-right:10px;
+    margin:5px;
+}
+
+#content .form input:hover, #content .form select:hover{
+    background:#65902c;
+}
+
+#content .form select{
+    width:200px;
+    border:none;
+    outline:none;
+    -webkit-appearance:none;
+}
+
+#content .form input[type=submit]{
+    width:100px;
+}
+
+#content .form input[type=text], #content .form input[type=password], #content .form input[name=forgotPassword], #content .form input[name=resendActivation]{
+    width:180px;
+}
+
+
+
+#content .form textarea{
+    border: 0;
+    background:#87b24d;
+    color:#fff;
+    padding: 8px 10px;
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    width: auto;
+    height: 100px;
+    width: 300px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    ox-sizing: border-box; 
+}
+
+#content .commonForm{
+    background:#fff;
+    padding:30px;
+    display:inline-block;
+    -webkit-border-radius: 10px; 
+    -moz-border-radius: 10px; 
+    border-radius: 10px; 
+    border:5px solid #f1f1f1;
+}
+
+#content .commonFormWrapper{
+    text-align:center;
+}
+
+#header .button{
+    text-align:center;
+    min-width: 100px;
+}
+
+#header .memberLogin .button{
+    background: #c74e4e;
+    margin:0;
+}
+
+#header .memberLogin .button:hover{
+    background: #b43232;
+}
+
+#header .memberLogin{
+    width:900px;
+    margin:auto;
+    text-align:right;
+    top:-70px;
+    position:relative;
+    height:70px;
+    line-height:70px;
+}
+
+button, select, input[type=submit]{
+    cursor:pointer;
+}
+
+#content .infoTitle{
+    font-size:13pt;
+    font-weight:bold;
+    margin-top:30px;
+    margin-bottom:5px;
+}
