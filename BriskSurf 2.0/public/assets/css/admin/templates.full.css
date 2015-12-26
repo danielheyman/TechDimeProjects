@@ -1,0 +1,277 @@
+body{
+	margin:0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+a{
+	text-decoration: none;
+	color: #3498db;
+}
+#menu
+{
+	background:#233240;
+	width:100%;
+	min-width:970px;
+}
+
+#menu .inner{
+	width:970px;
+	margin:auto;
+	line-height: 60px;
+}
+
+#menu .brand{
+	padding-top: 25px;
+	font-size: 25px;
+	font-weight: normal;
+	color: #ffffff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 600;
+}
+
+#menu .right{
+	float:right;
+}
+
+#menu .right a{
+	font-size: 16px;
+	font-weight: 600;
+	color: #ffffff;	
+	display: inline-block;
+	margin-left: 20px;
+}
+
+#menu a:hover{
+	color:#def;
+}
+
+#container{
+	width:970px;
+	margin:auto;
+	padding-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+.selectionWrap{
+	position: relative;
+	z-index: 2;
+	background: #ECF0F1;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid #BDC3C7;
+}
+
+#selection{
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #aaa;
+	padding: 4px;
+	color: #555;
+	width: 100%;
+	background: transparent;
+	border:0;
+}
+
+
+
+#text{
+	padding: 20px;
+	border: 1px solid #BDC3C7;
+	border-radius: 3px;
+	margin-top: -22px;
+	margin-bottom:15px;
+}
+
+.hidden{
+	display: none;
+}
+
+.table{
+	font-size: 14px;
+	width: 100%;
+	margin-bottom: 20px;
+	max-width: 100%;
+	background-color: transparent;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.table tr{
+	text-align: left;
+	vertical-align: top;
+}
+
+.table > tbody > tr:nth-child(odd) > td, .table > tbody > tr:nth-child(odd) > th {
+	background-color: transparent;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th {
+	color: #526476;
+	border-bottom: 1px solid #eef0f0;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	padding: 12px 25px;
+	line-height: 1.231;
+	border-top: 1px solid #eef0f0;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th {
+	border-top: 0;
+}
+
+.table > tbody > tr:nth-child(odd) > td, .table > tbody > tr.selected-row > td, .table > tbody > tr:nth-child(odd) > th, .table > tbody > tr.selected-row > th {
+	background-color: #fdfdfd;
+	background-color: transparent;
+	color: #888;
+}
+
+.table > tbody > tr:nth-child(even) > td, .table > tbody > tr:nth-child(even) > th {
+	background-color: transparent;
+	color: #888;
+}
+
+.table input, .table select, .table textarea{
+	border:0;
+	background: transparent;
+	margin: 0;
+	padding:0;
+	font-size: 14px;
+	text-indent: 0;
+	outline: 0;
+	box-sizing:border-box;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	border-radius: 0;
+}
+
+input, select, textarea{
+	font-size: 14px;
+	color: #666;
+}
+
+.table input[type=text], .table input[type=number], .table select, .table textarea{
+	width: 100%;
+}
+
+.table select{
+	position: relative;
+	height: 30px;
+	-webkit-appearance: none;
+}
+
+.table input[type=submit]
+{
+	text-align: left;
+}
+
+.table input[type=submit]:hover
+{
+	color: #ccc;
+	cursor: pointer;
+}
+
+.table tr td:first-child{
+	width:40%;
+}
+
+.table tr td.auto{
+	width:auto;
+}
+
+.table input[type=text], .table select{
+	width: 100%;
+}
+
+.table input[type=number]
+{
+	width: 98%;
+}
+
+.table .array.key{
+	width:150px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.table input.array, .table select.array{
+	width:350px;
+	margin-bottom: 10px;
+}
+
+.table textarea{
+	margin-bottom:10px;
+	color: #999;
+}
+
+
+.table tr:hover td{
+	background:#fdfdfd!important;
+}
+
+
+
+
+
+
+h2{
+	color:#fff;
+	text-align: center;
+}
+
+.box{
+	width:200px;
+	padding:20px;
+	background:#fff;
+	margin:auto;
+	font-size:15px;
+	margin-top:50px;
+}
+
+.box input{
+	margin-top:15px;
+	display: block;
+	width:100%;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.login{
+	width:240px;
+	line-height: 40px;
+	margin:auto;
+	background: #3498db;
+	color: #fff;
+	border:0;
+	display: block;
+}
+
+.error { color: red; font-style: italic; }
+
+button{
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	border-radius: 3px;
+	background: #fff;
+	margin-right: 30px;
+}
+
+button:hover{
+	background: #ddd;
+	cursor: pointer;
+}
+
+.right{
+	margin-right: 0;
+	margin-left: 30px;
+	float: right;
+	margin-top: 0px;
+}

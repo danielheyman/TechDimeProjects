@@ -1,0 +1,90 @@
+.header-8-sub{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 20px;
+
+	h3{
+		margin-bottom: 20px;
+	}
+	.lead{
+		margin-bottom: 30px;
+	}
+}
+
+.banners .col-sm-6{
+	text-align: center;
+	min-width: 500px;
+	padding: auto;
+}
+
+.banners .banner{
+	display: inline-block;
+}
+
+.banners .banner img{
+	border-radius: 10px;
+	width: 468px;
+	height: 60px;
+}
+
+.banner.selected img{
+	box-shadow: 0 0 0 2px #fff,
+	    	0 0 0 6px #e74c3c;
+}
+
+#overlay{
+	border-radius: 9px;
+	display: none;
+	background: #eee;
+	position: absolute;
+	z-index: 100;
+	overflow: hidden;
+
+	.col-sm-2 {
+		width: 60px;
+	}
+
+	.col-sm-4 {
+		width: 174px;
+	}
+
+	.col-sm-6 {
+		width: 234px;
+	}
+
+	.col-sm-6, .col-sm-2, .col-sm-4{
+		padding: 0;
+		height: 100%;
+	}
+
+	.select, .visit{
+		position: relative;
+		display: inline-block;
+		width: 100%;
+		height: 100%;
+		color: #333;
+		text-align: center;
+	}
+
+	.select:hover, .visit:hover{
+		background: #3498db;
+		color: #fff;
+	}
+}
+
+form{
+	display: inline-block;
+}
+
+#continue{
+	margin-left: 20px;
+	display: none;
+}
+
+#counter{
+	margin-left: 20px;
+}
+
+.width-100{
+	width: 100%;
+}

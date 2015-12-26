@@ -1,0 +1,116 @@
+#content #onlineListContainer
+{
+    display:none;
+}
+
+#content #logoutChannelContainer{
+    left:5px;
+    right:5px;
+    text-align:center;
+    top:6px;
+    display:none;
+}
+
+#content #logoutChannelContainer select{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding:0;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    -webkit-border-radius:2px;
+}
+
+#content #chatList {
+    top:5px;
+    right:5px;
+    left:5px;
+    bottom:100px;
+}
+
+#content #inputFieldContainer
+{
+    right:7px;
+    left:5px;  
+    bottom:40px;
+}
+
+#content #inputFieldContainer #inputField{
+    padding:2px;   
+    right:50px;
+    resize:none;
+    font-size: 12px;
+}
+
+#content #submitButtonContainer
+{
+    bottom:10px;   
+    left:5px;
+    right:85px;
+}
+
+#content #submitButtonContainer input
+{
+    height:25px;
+    width:100%;
+}
+
+#content #emoticonsContainer
+{
+    bottom:45px;   
+    height:35px;
+    left:5px;
+    right:5px;
+    border: 1px solid #ccc;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    -webkit-border-radius:2px;
+    background:#fff;
+    display:none;
+}
+
+#content #optionsContainer #onlineListButton{
+    display:none;   
+}
+
+#content #bbCodeContainer
+{
+    left:5px;   
+    bottom:5px;
+    text-align: center;
+right: 5px;
+    display:none;
+}
+
+#content #optionsContainer
+{
+    right:8px;
+    bottom:9px;
+}
+
+#content #colorCodesContainer
+{
+    border-color:#ccc;
+    left:5px;
+    width:133px;
+    bottom:50px;
+}
+
+#messageLengthCounter{
+    position:absolute;
+    bottom:-20px;
+    right:1px;
+    padding:0;
+    margin:0;
+    width:60px;
+    text-align:center;
+    display:none;
+}
+
+#optionsContainer img{
+    position:relative;
+    top:6px;
+    right:2px;
+}

@@ -1,0 +1,127 @@
+button{
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	border-radius: 3px;
+	background: #fff;
+}
+
+button:hover{
+	background: #ddd;
+	cursor: pointer;
+}
+
+.right{
+	margin-left: 30px;
+	float: right;
+	margin-top: 0px;
+}
+
+.name{
+	margin-left: 20px;
+	display: inline-block;
+	width:300px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+h3{
+	color: #333;
+	margin-top: 50px;
+}
+
+select{
+	width: 400px;
+	border: 1px solid #ccc;
+	height: 30px;
+	border-radius: 5px;
+	background: #fefefe;
+}
+.filter .filter_inner{
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fefefe;
+	padding: 5px;
+	box-sizing: border-box;
+	cursor: pointer;
+	height: 40px;
+}
+
+.filter .list .inner{
+	border-radius: 5px;
+	padding: 5px 10px;
+	background: #ddd;
+	display: inline-block;
+	cursor: auto;
+}
+
+.filter .delete{
+	display: inline;
+	margin-left: 5px;
+	font-size: 10px;
+}
+
+.filter .delete:hover{
+	color: #AE3427;
+	cursor: pointer;
+}
+
+.filter .list{
+	display: inline-block;
+}
+
+.filter .list:after{
+	content: "or";
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.filter.and:before{
+	content: "AND";
+	padding-left: 15px;
+	border-left: 1px solid #ddd;
+	line-height: 30px;
+	display: inline-block;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+#and{
+	margin-top: 20px;
+}
+
+#actions{
+	width: 968px;
+	background: #fefefe;
+	border: 1px solid #ccc;
+	border-top: 0;
+	border-radius: 0 0 5px 5px;
+	border-bottom-width: 2px;
+	display: none;
+	position: absolute;
+	padding-top: 5px;
+}
+
+#actions div{
+	padding: 5px;
+	cursor: pointer;
+}
+
+#actions div:hover{
+	background: #ddd;
+}
+
+td{
+	line-height: 20px!important;
+}
+
+td select{
+	height: 20px;
+}
+
+.filter_name{
+	display: inline-block;
+}

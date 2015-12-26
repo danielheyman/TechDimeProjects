@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://techslides.com/demos/split-video-into-canvas-tiles.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>HTML5 Video Tiles with Drag and Drop using CANVAS Demo</title> 
+    
+<script src="jquery-1.7.min.js"></script>
+<script type="text/javascript" src="jquery-ui.min.js"></script>
+<style>
+#box{
+  width:640px;
+  height:360px;
+  margin:0px auto;
+    margin-top:100px;
+    position:relative;
+    z-index:2;
+        
+}
+#box2{
+    width:639px;
+    height:360px;
+    position:absolute;
+    z-index:1;
+        
+}
+    
+    
+    .tile{
+      float:left;
+    }
+    .glow{
+        -moz-box-shadow:0 0 15px #454545; 
+        -webkit-box-shadow:0 0 15px #454545; 
+        -o-box-shadow:0 0 15px #454545; 
+        box-shadow:0 0 15px #454545; 
+        border:3px solid #F90;
+    }
+    
+    #video-controls{
+        text-align:center;   
+    }
+</style></head>
+    
+<div style="display:none">
+    <video autoplay id="source-vid" > 
+      <source src="welcome_converted.mp4"  type="video/mp4"> 
+      <!--<source src="http://techslides.com/demos/sample-videos/BigBuckBunny_640x360.ogv" type="video/ogg"> -->
+    </video> 
+</div>
+    
+<div id="video-controls">
+    <button type="button" id="play-pause">Pause</button>
+    <input type="range" id="seek-bar" value="0">
+    <button type="button" id="mute">Mute</button>
+    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+    <br><br>
+</div>
+    <script>
+        window.onload = function() {
+            // Video
+          var video = document.getElementById("source-vid");
+        
+          // Buttons
+          var playButton = document.getElementById("play-pause");
+          var muteButton = document.getElementById("mute");
+        
+          // Sliders
+          var seekBar = document.getElementById("seek-bar");
+          var volumeBar = document.getElementById("volume-bar");
+        
+            playButton.addEventListener("click", function() {
+              if (video.paused == true) {
+                // Play the video
+                video.play();
+            
+                // Update the button text to 'Pause'
+                playButton.innerHTML = "Pause";
+              } else {
+                // Pause the video
+                video.pause();
+            
+                // Update the button text to 'Play'
+                playButton.innerHTML = "Play";
+              }
+            });
+            
+            // Event listener for the mute button
+muteButton.addEventListener("click", function() {
+  if (video.muted == false) {
+    // Mute the video
+    video.muted = true;
+
+    // Update the button text
+    muteButton.innerHTML = "Unmute";
+  } else {
+    // Unmute the video
+    video.muted = false;
+
+    // Update the button text
+    muteButton.innerHTML = "Mute";
+  }
+});
+            
+            // Event listener for the seek bar
+seekBar.addEventListener("change", function() {
+  // Calculate the new time
+  var time = video.duration * (seekBar.value / 100);
+    
+  // Update the video time
+  video.currentTime = time;
+});
+            
+            // Update the seek bar as the video plays
+video.addEventListener("timeupdate", function() {
+  // Calculate the slider value
+  var value = (100 / video.duration) * video.currentTime;
+
+  // Update the slider value
+ if(value == 100) playButton.innerHTML = "Play";
+  seekBar.value = value;
+});
+            
+            seekBar.addEventListener("mousedown", function() {
+  video.pause();
+});
+
+// Play the video when the slider handle is dropped
+seekBar.addEventListener("mouseup", function() {
+  video.play();
+});
+            
+            volumeBar.addEventListener("change", function() {
+  // Update the video volume
+  video.volume = volumeBar.value;
+});
+        }
+        
+    </script>
+<div id="box">
+</div>
+    <div id="box2">
+</div>
+<script type="text/javascript">
+    ROWS = 2;
+    COLS = 3;
+    tiles(640, 360, ROWS, COLS);
+    
+    var video = $("#source-vid")[0];
+    update(video);
+
+    function update(video) {
+      tiles(640, 360, ROWS, COLS, video);
+      setTimeout(function() { update(video) }, 33);
+    }
+    var complete = false;
+    function tiles(w, h, r, c, source) {
+        var tileW = Math.round(w / c);
+        var tileH = Math.round(h / r);
+
+        for(var ri = 0; ri < r; ri += 1) {
+          for(var ci = 0; ci < c; ci += 1) {
+            //if source is not specified, just build canvas object, otherwise draw inside them
+            if (typeof source === 'undefined') {
+                var tile = $('<canvas class="tile tile' + ri + ci + '" id="tile' + ri + ci + '" height="' + tileH + '" width="' + tileW + '"></canvas>').get(0);
+                $("#box").append(tile);
+                $(".tile").draggable({ snap: true,
+                                      start: function(event,i)
+                                      {
+                                         $( "#box2" ).removeClass( "glow" ); 
+                                      },
+                                     stop: function(event,i)
+                                      {
+                                          var minxcount = 0;
+                                          var minx = 9999;
+                                          var maxxcount = 0;
+                                          var maxx = 0;
+                                          var miny = 9999;
+                                          var minycount = 0;
+                                          var maxy = 0;
+                                          var maxycount = 0;
+                                        $( "canvas" ).each(function() {
+                                          var left = $( this ).offset().left;
+                                          var top = $( this ).offset().top;
+                                            
+                                            if(left == minx) minxcount += 1;
+                                            else if(left < minx) { minx = left; minxcount = 1; }
+                                            if(left == maxx) maxxcount += 1;
+                                            else if(left > maxx) { maxx = left; maxxcount = 1; }
+                                            if(top == miny) minycount += 1;
+                                            else if(top < miny) { miny = top; minycount = 1; }
+                                            if(top == maxy) maxycount += 1;
+                                            else if(top > maxy) { maxy = top; maxycount = 1; }
+                                        });
+                                          if(minxcount == 2 && maxxcount == 2 && minycount == 3 && maxycount == 3 && maxx - minx == 426 && maxy - miny == 180) complete = true;   
+                                          else complete = false;
+                                          if(complete) 
+                                          {
+                                              //$( "canvas" ).removeClass( "glow" );
+                                              $( "#box2" ).addClass( "glow" );
+                                              $( "#box2" ).css( "top", $( "#tile00" ).offset().top - 3);
+                                              $( "#box2" ).css( "left", $( "#tile00" ).offset().left - 3);
+                                          }
+                                          else
+                                          {
+                                              //$( "canvas" ).addClass( "glow" );
+                                              $( "#box2" ).removeClass( "glow" );
+                                          }
+                                      }
+                                     });
+                $("#tile" + ri + ci).css("top", Math.floor((Math.random()*150)-75));
+                $("#tile" + ri + ci).css("left", Math.floor((Math.random()*150)-(50 + ci * 25)));
+            } else {
+                var getit = $('#tile' + ri + ci).get(0);
+                context = getit.getContext('2d');
+                context.drawImage(source, ci*tileW, ri*tileH, tileW, tileH, 0, 0, tileW, tileH);
+            }
+          }
+        }   
+    }
+</script>
+
+</body></html>

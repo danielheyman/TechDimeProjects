@@ -1,0 +1,42 @@
+/* line 1, ../sass/app/in.website_graph.scss */
+body, html {
+  min-width: 10px !important;
+}
+
+/* line 5, ../sass/app/in.website_graph.scss */
+body {
+  background: #f9fafb;
+}
+
+/* line 9, ../sass/app/in.website_graph.scss */
+p {
+  position: relative;
+  z-index: 5;
+}
+
+/* line 14, ../sass/app/in.website_graph.scss */
+#chart, #chart2 {
+  position: relative;
+  top: -30px;
+}
+
+/* line 19, ../sass/app/in.website_graph.scss */
+.fui-star-2 {
+  position: relative;
+  top: -2px;
+}
+
+/* line 24, ../sass/app/in.website_graph.scss */
+.fui-star-2:first-child {
+  margin-left: 10px;
+}
+
+/* line 28, ../sass/app/in.website_graph.scss */
+.fui-star-2:last-child {
+  margin-right: 10px;
+}
+
+/* line 32, ../sass/app/in.website_graph.scss */
+.fui-star-2.yellow {
+  color: #f1c40f;
+}

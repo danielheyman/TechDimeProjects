@@ -1,0 +1,39 @@
+body{
+	font-size: 14px;
+}
+
+input{
+	margin: 0;
+	display: inline-block;
+	width:300px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: 5px;
+	width: 895px;
+}
+
+.title{
+	width: 60px;
+	text-align: right;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+form{
+	margin-top: 50px;
+}
+
+textarea[name=data]{
+	display: none;
+}
+
+ #editor { 
+	height: 500px;
+	width: 100%;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}

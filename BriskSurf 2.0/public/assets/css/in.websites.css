@@ -1,0 +1,20 @@
+/* line 1, ../sass/app/in.websites.scss */
+.website_url {
+  width: 255px;
+  height: 43px;
+}
+/* line 5, ../sass/app/in.websites.scss */
+.website_url a {
+  overflow: hidden;
+  display: inline-block;
+  white-space: nowrap;
+  width: 200px;
+  position: absolute;
+  background: inherit;
+  padding-right: 30px;
+}
+
+/* line 16, ../sass/app/in.websites.scss */
+.right {
+  text-align: right;
+}

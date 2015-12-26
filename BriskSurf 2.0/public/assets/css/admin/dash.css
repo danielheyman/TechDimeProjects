@@ -1,0 +1,80 @@
+.checkboxes{
+	position: relative;
+	z-index: 2;
+	display: inline-block;
+	margin-left:30px;
+}
+
+.checkbox {
+	width: 20px;
+	margin: 20px auto;
+	position: relative;
+	display: inline-block;
+}
+
+.checkbox label {
+	cursor: pointer;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 0;
+	border-radius: 4px;
+	background: #DDD;
+}
+
+.checkbox label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 9px;
+	height: 5px;
+	background: transparent;
+	top: 4px;
+	left: 4px;
+	border: 3px solid #333;
+	border-top: none;
+	border-right: none;
+
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.checkbox label:hover::after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+	filter: alpha(opacity=30);
+	opacity: 0.5;
+}
+
+.checkbox input[type=checkbox]:checked + label:after {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+
+.label{
+	margin-right:40px;
+	margin-left:5px;
+	display: inline-block;
+	font-size:14px;
+	color: #333;
+}
+
+
+
+.chartWrapper{
+	padding: 20px;
+	border: 1px solid #BDC3C7;
+	border-radius: 3px;
+	/*background: #FCFCFC;*/
+	margin-top: -80px;
+	margin-bottom:15px;
+}
+
+#chart{
+	z-index: 1;
+}

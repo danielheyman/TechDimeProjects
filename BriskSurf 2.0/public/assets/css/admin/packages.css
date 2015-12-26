@@ -1,0 +1,7 @@
+td .half{
+	width: 264px;
+}
+
+.membership, .credit{
+	display: none;
+}

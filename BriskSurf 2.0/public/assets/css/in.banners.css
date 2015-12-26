@@ -1,0 +1,15 @@
+/* line 1, ../sass/app/in.banners.scss */
+.banner img {
+  height: 39px;
+  width: 307px;
+}
+
+/* line 6, ../sass/app/in.banners.scss */
+.table td {
+  line-height: 39px !important;
+}
+
+/* line 10, ../sass/app/in.banners.scss */
+.right {
+  text-align: right;
+}

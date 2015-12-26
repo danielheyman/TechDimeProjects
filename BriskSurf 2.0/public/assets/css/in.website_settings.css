@@ -1,0 +1,29 @@
+/* line 1, ../sass/app/in.website_settings.scss */
+.enabled-description {
+  margin-bottom: 20px;
+}
+
+/* line 5, ../sass/app/in.website_settings.scss */
+.enabled-description .btn-primary {
+  width: 30px;
+  margin-right: 10px;
+}
+
+/* line 9, ../sass/app/in.website_settings.scss */
+.enabled-description .btn-danger {
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+/* line 15, ../sass/app/in.website_settings.scss */
+#hours button {
+  width: 99px;
+  margin-bottom: 10px;
+}
+
+/* line 20, ../sass/app/in.website_settings.scss */
+#days button {
+  width: 128px;
+  margin-bottom: 10px;
+}

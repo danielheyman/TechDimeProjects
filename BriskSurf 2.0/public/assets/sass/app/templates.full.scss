@@ -1,0 +1,156 @@
+@import '../lib/mixins.scss';
+
+body{
+	padding-top:0;   
+}
+
+.error { color: red; font-style: italic; }
+
+.tile {
+	background-color: #eff0f2;
+	border-radius: 6px;
+	padding: 14px;
+	position: relative;
+	text-align: center;
+
+	&.tile-hot:before{
+		background: url(../images/tile/ribbon.png) 0 0 no-repeat;
+		background-size: 82px 82px;
+		content: '';
+		height: 82px;
+		position: absolute;
+		right: -4px;
+		top: -4px;
+		width: 82px;
+	}
+
+	p{
+		font-size: 15px;
+		margin-bottom: 33px;
+	}
+}
+
+.tile-image {
+	height: 100px;
+	margin: 31px 0 27px;
+	vertical-align: bottom;
+
+	&.big-illustration{
+	height: 111px;
+	margin-top: 20px;
+	width: 112px;
+	}
+}
+
+.tile-title {
+	font-size: 20px;
+	margin: 0;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 2) {
+	.tile.tile-hot:before {
+		background-image: url(../images/tile/ribbon-2x.png);
+	}
+}
+
+
+
+.container {
+	width: 970px!important;
+}
+
+body, html {
+	min-width: 970px!important;
+}
+
+.header-2-sub{
+	padding-top: 105px;   
+}
+
+.navbar-header {
+	float: left;
+}
+
+.footer-14 nav ul li {
+	margin-left: 20px;
+}
+
+.dropdown-arrow {
+	border-color:transparent transparent #888 transparent;
+}
+
+.dropdown-menu {
+	border:1px solid #888;
+	@include box-shadow(0px 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+.header-10 .navbar .brand{
+	padding-top: 18px;
+}
+
+.crew-4 .members .member-wrapper + .member-wrapper {
+	margin-top: 0;
+}
+
+.crew-4 .members .member, .crew-4 .members .photo-wrapper {
+	width: 230px;
+}
+
+body > section, header, footer {
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+}
+
+.navbar-form {
+	margin: 0;
+}
+
+.header-10 .navbar .nav > li.active > a{
+	color: #16a085;
+}
+
+.dropdown-menu li:first-child > a, {
+	border-radius: 2px 2px 0 0;
+}
+
+.dropdown-menu li:last-child > a{
+	border-radius:  0 0 2px 2px;
+}
+
+.header-10 .header-background {
+	background: #AE3427;
+}
+
+.header-10 .navbar .nav > li.active > a {
+	color: #79BEEC;
+}
+
+.navbar .dropdown-toggle {
+	background: #AE3427 !important;
+}
+
+.progress-bar {
+	background: #3498db;
+}
+
+.dropdown-menu li.active > a, .dropdown-menu li.selected > a, .dropdown-menu li.active > a.highlighted, .dropdown-menu li.selected > a.highlighted {
+	background: #3498db;
+}
+
+.dropdown-menu li.active:hover > a, .dropdown-menu li.selected:hover > a, .dropdown-menu li.active:hover > a.highlighted, .dropdown-menu li.selected:hover > a.highlighted {
+	background: #2987C7;
+}
+
+.signup-form {
+	color: #ccc;
+}
+
+.table .fa {
+	vertical-align: baseline;
+	font-size: 23px;
+	margin: -5px 0;
+	position: relative;
+	top: 2px;
+}
+

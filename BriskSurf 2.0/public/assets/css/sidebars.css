@@ -1,0 +1,241 @@
+/* line 3, ../sass/app/sidebars.scss */
+#tasks, #messages {
+  position: absolute;
+  top: 20px;
+  z-index: 101;
+  color: #fff;
+  font-size: 25px;
+}
+/* line 10, ../sass/app/sidebars.scss */
+#tasks a, #tasks i, #messages a, #messages i {
+  color: #ffffff;
+  cursor: pointer;
+}
+/* line 14, ../sass/app/sidebars.scss */
+#tasks a:hover, #tasks i:hover, #messages a:hover, #messages i:hover {
+  color: #ccc;
+}
+/* line 19, ../sass/app/sidebars.scss */
+#tasks span, #messages span {
+  background: #3498db;
+}
+/* line 24, ../sass/app/sidebars.scss */
+#tasks:hover span, #messages:hover span {
+  background: #3088C3;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+}
+
+/* line 33, ../sass/app/sidebars.scss */
+#tasks {
+  left: 20px;
+}
+/* line 36, ../sass/app/sidebars.scss */
+#tasks span {
+  right: -14px;
+}
+
+/* line 41, ../sass/app/sidebars.scss */
+#messages {
+  right: 20px;
+}
+/* line 44, ../sass/app/sidebars.scss */
+#messages span {
+  right: 13px;
+}
+
+/* line 49, ../sass/app/sidebars.scss */
+#tasks_sidebar, #messages_sidebar {
+  width: 250px;
+  top: 80px;
+  bottom: 100px;
+  color: #34495e;
+  z-index: 100;
+  overflow: hidden;
+  position: absolute;
+  -webkit-transition: 0.5s 0s ease;
+  -moz-transition: 0.5s 0s ease;
+  -o-transition: 0.5s 0s ease;
+  transition: 0.5s 0s ease;
+  overflow: auto;
+}
+/* line 60, ../sass/app/sidebars.scss */
+#tasks_sidebar .inner, #messages_sidebar .inner {
+  background: #ECF0F1;
+  position: absolute;
+  width: 250px;
+  height: 100%;
+}
+/* line 67, ../sass/app/sidebars.scss */
+#tasks_sidebar .item, #messages_sidebar .item {
+  margin: 0;
+  font-size: 13px;
+  background: #fff;
+  padding: 23px 13px;
+  margin: 7px;
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  padding: 25px 15px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
+  -webkit-transition: box-shadow 0.7s 0.01s;
+  -webkit-transition-delay: cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: box-shadow 0.7s 0.01s cubic-bezier(0.19, 1, 0.22, 1);
+  -o-transition: box-shadow 0.7s 0.01s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: box-shadow 0.7s 0.01s cubic-bezier(0.19, 1, 0.22, 1);
+}
+/* line 82, ../sass/app/sidebars.scss */
+#tasks_sidebar .item:hover, #messages_sidebar .item:hover {
+  -webkit-box-shadow: 0px 0px 4px black;
+  -moz-box-shadow: 0px 0px 4px black;
+  box-shadow: 0px 0px 4px black;
+  z-index: 2;
+}
+/* line 86, ../sass/app/sidebars.scss */
+#tasks_sidebar .item:hover .options, #tasks_sidebar .item:hover .time, #messages_sidebar .item:hover .options, #messages_sidebar .item:hover .time {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 91, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .time, #messages_sidebar .item .time {
+  display: inline;
+  float: right;
+  font-size: 12px;
+  font-weight: normal;
+  margin-top: 2px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+  color: #888;
+  margin-left: 20px;
+}
+/* line 102, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .title, #messages_sidebar .item .title {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/* line 108, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .options, #messages_sidebar .item .options {
+  margin-top: 5px;
+  font-size: 12px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  opacity: 0.3;
+}
+/* line 113, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .options i, #messages_sidebar .item .options i {
+  margin-top: 5px;
+  margin-right: 5px;
+  color: #888;
+}
+/* line 118, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .options i.margin, #messages_sidebar .item .options i.margin {
+  margin-left: 10px;
+}
+/* line 123, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .options a, #messages_sidebar .item .options a {
+  color: #888;
+}
+/* line 126, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .options a:hover, #messages_sidebar .item .options a:hover {
+  color: #16a085;
+}
+/* line 128, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .options a:hover i, #messages_sidebar .item .options a:hover i {
+  color: #16a085;
+}
+
+/* line 137, ../sass/app/sidebars.scss */
+#tasks_sidebar {
+  left: 0;
+  -webkit-box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.5);
+}
+/* line 142, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .progress {
+  margin: 0;
+  margin-top: 10px;
+  background: #aaa;
+}
+/* line 147, ../sass/app/sidebars.scss */
+#tasks_sidebar .item .progress div {
+  background: #34495e;
+}
+
+/* line 154, ../sass/app/sidebars.scss */
+#messages_sidebar {
+  right: 0;
+  -webkit-box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: -1px 0px 5px rgba(0, 0, 0, 0.5);
+}
+/* line 158, ../sass/app/sidebars.scss */
+#messages_sidebar .item {
+  cursor: pointer;
+}
+/* line 161, ../sass/app/sidebars.scss */
+#messages_sidebar .item .type_data, #messages_sidebar .item .type_data_title {
+  display: none;
+}
+/* line 165, ../sass/app/sidebars.scss */
+#messages_sidebar .item.special {
+  background: #ffeb3b;
+}
+
+/* line 171, ../sass/app/sidebars.scss */
+#tasks_menu, #notifications_menu {
+  display: none;
+  cursor: pointer;
+}
+/* line 175, ../sass/app/sidebars.scss */
+#tasks_menu span, #notifications_menu span {
+  top: 20px;
+  right: -15px;
+}
+
+@media (max-width: 1500px) {
+  /* line 183, ../sass/app/sidebars.scss */
+  #messages_sidebar, #tasks_sidebar {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+  }
+  /* line 185, ../sass/app/sidebars.scss */
+  #messages_sidebar.pop, #tasks_sidebar.pop {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+  }
+
+  /* line 190, ../sass/app/sidebars.scss */
+  #tasks_sidebar {
+    left: -250px;
+  }
+
+  /* line 194, ../sass/app/sidebars.scss */
+  #tasks_sidebar.pop {
+    left: 0;
+  }
+
+  /* line 198, ../sass/app/sidebars.scss */
+  #messages_sidebar {
+    width: 0px;
+  }
+
+  /* line 202, ../sass/app/sidebars.scss */
+  #messages_sidebar.pop {
+    width: 250px;
+  }
+}
+@media (max-width: 1100px) {
+  /* line 208, ../sass/app/sidebars.scss */
+  #tasks, #messages {
+    display: none;
+  }
+
+  /* line 212, ../sass/app/sidebars.scss */
+  #tasks_menu, #notifications_menu {
+    display: block;
+  }
+}

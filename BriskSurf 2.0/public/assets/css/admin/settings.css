@@ -1,0 +1,24 @@
+.selectionWrap{
+	background: red;
+	position: relative;
+	z-index: 2;
+	background: #ECF0F1;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border: 1px solid #BDC3C7;
+}
+
+#selection{
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #aaa;
+	padding: 4px;
+	color: #555;
+	width: 100%;
+	background: transparent;
+	border:0;
+}
+
+.hidden{
+	display: none;
+}

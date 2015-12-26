@@ -1,0 +1,123 @@
+.green{
+	display: inline-block;
+	color: #27AE60;
+}
+.blue{
+	display: inline-block;
+	color: #2980B9;
+}
+
+.red{
+	display: inline-block;
+	color: #E74C3C;
+}
+
+.history{
+	color: #2980B9;
+	line-height:30px;
+	float:left;
+	background: #FCFCFC;
+	border: 1px solid #BDC3C7;
+	padding: 20px;
+	border-radius: 3px;
+}
+
+.history .item{
+	margin-left: 30px;
+}
+
+#width_tmp{
+ 	display : none;
+}
+
+.history .item input, .history .item select{
+	border:0;
+	background:transparent;
+	color:#2980B9;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:15px;
+	outline:0;
+	width:160px;
+}
+
+.history .item.user, .history .item.conditions, .history .item.graph{
+	display: none;
+}
+
+.history .item input[placeholder=option]
+{
+	/*width:100px;*/
+	width:48px;
+	transition: width 0.25s;  
+}
+
+.history .item input[placeholder='=']
+{
+	width:14px;
+	transition: width 0.25s;  
+}
+
+.history .item input[placeholder=value]
+{
+	width:100px;
+	transition: width 0.25s;  
+}
+
+.history input[type=submit]
+{
+	border:0;
+	background:#27AE60;
+	color: #fff;
+	padding: 5px 30px;
+	border-radius:5px;
+	cursor: pointer;
+}
+
+.records{
+	max-width:640px;
+	float:right;
+}
+
+.records .record{
+	background: #FCFCFC;
+	border:1px solid #BDC3C7;
+	padding: 20px;
+	border-radius:3px;
+	margin-bottom:15px;
+	color: #2C3E50;
+	width:600px;
+	line-height: 20px;
+	font-size:15px;
+}
+
+.chartWrapper{
+	padding: 0 20px;
+	border: 1px solid #BDC3C7;
+	border-radius: 3px;
+	background: #FCFCFC;
+	margin-top: -41px;
+	margin-bottom:15px;
+}
+
+#chart{
+	z-index: 1;
+}
+
+#container .selectionWrap{
+	margin:1px;
+	border:0;
+	border-bottom: 1px solid #BDC3C7;
+}
+
+.graph_type{
+	cursor: pointer;
+	display: inline-block;
+}
+
+.graph_sort{
+	cursor: pointer;
+}
+
+.graph_value{
+	display: inline-block;
+}

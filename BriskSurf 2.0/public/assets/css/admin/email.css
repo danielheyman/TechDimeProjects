@@ -1,0 +1,49 @@
+body{
+	font-size: 14px;
+}
+
+input{
+	margin: 0;
+	display: inline-block;
+	width:300px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin-left: 5px;
+	width: 875px;
+}
+
+select{
+	width: 875px;
+	border: 1px solid #ccc;
+	height: 30px;
+	border-radius: 5px;
+	background: #fff;
+	margin: 0;
+	height: 35px;
+}
+
+.title{
+	width: 80px;
+	text-align: right;
+	padding-right: 10px;
+	display: inline-block;
+}
+
+form{
+	margin-top: 50px;
+}
+
+textarea{
+	height: 300px;
+}
+
+.attribute{
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background: #f8f8f8;
+	margin-top: 10px;
+	margin-right: 5px;
+}

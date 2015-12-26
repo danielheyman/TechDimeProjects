@@ -1,0 +1,148 @@
+/*
+|--------------------------------------------------------------------------
+| Tour Guide by Daniel Heyman
+|--------------------------------------------------------------------------
+*/
+#tourOverlay{
+    display:none; 
+    opacity: 0.8; 
+    position:fixed; 
+    top:0; 
+    bottom:0; 
+    right:0; 
+    left:0; 
+    background: #333; 
+    z-index:99997;
+    height: 100%; 
+    min-height: 100%;
+}
+    
+#tourTip{
+    display:none; 
+    line-height:20px; 
+    border-radius:5px; 
+    background:#fff; 
+    position:absolute; 
+    padding:12px; 
+    z-index:99998;
+    background: #F90;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    max-width:300px;
+    background: #FFF;
+    border:2px solid #F90;
+}
+    
+#tourArrow{
+    display:none; 
+    position:absolute; 
+    z-index:99999;
+    width: 0; 
+    height: 0; 
+}
+    
+#tourArrow.left{
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-left:10px solid #F90; 
+}
+    
+#tourArrow.right{
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    
+    border-right:10px solid #F90; 
+}
+    
+#tourArrow.bottom{
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent; 
+    
+    border-bottom:10px solid #F90; 
+}
+    
+#tourArrow.top{
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent; 
+    
+    border-top:10px solid #F90; 
+}
+    
+.nextbutton{
+    display:block;
+    width:100px;
+    height:25px;
+    line-height:25px;
+    text-align:center;
+    background:#2f3840;
+    color:#fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin:auto;
+    margin-top: 5px;
+    cursor: pointer;
+    text-decoration:none;
+}
+    
+#tourTip input[type=submit]{
+    display:block;
+    width:200px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+    background:#2f3840;
+    color:#fff;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    margin:auto;
+    cursor: pointer;
+    text-decoration:none;
+    border:0;
+    font-size:13px;
+    padding:0;
+    width:80%;
+}
+    
+#tourTip input[type=submit]:hover{
+    background:#93A3BB;    
+    text-decoration:none; 
+    color:#fff;
+}
+    
+.nextbutton:hover{
+    background:#93A3BB;    
+    text-decoration:none; 
+    color:#fff;
+}
+    
+.tourElement{
+    z-index: 99999;
+    position: relative;
+}
+    
+#tourClose{
+    display:none;
+    position:absolute; 
+    z-index:99999;
+    width: 20px; 
+    height: 20px; 
+    line-height:18px;
+    font-size:10px;
+    text-align:center;
+    color:#2f3840;
+    cursor:pointer;
+    text-decoration:none; 
+}
+    
+#tourClose:hover{ 
+    text-decoration:none; 
+    color:#fff;
+    color:#F90;
+}

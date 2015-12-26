@@ -1,0 +1,59 @@
+/* line 1, ../sass/app/in.memberships.scss */
+.price-3 {
+  padding-top: 60px;
+}
+
+/* line 5, ../sass/app/in.memberships.scss */
+.price-2 {
+  padding-top: 60px;
+}
+/* line 8, ../sass/app/in.memberships.scss */
+.price-2 .plans .plan {
+  width: 25%;
+}
+/* line 11, ../sass/app/in.memberships.scss */
+.price-2 .plans .description {
+  padding: 27px 30px;
+}
+/* line 13, ../sass/app/in.memberships.scss */
+.price-2 .plans .description .info {
+  margin-right: 0 !important;
+  font-size: 20px !important;
+  float: right;
+  color: #34495e !important;
+}
+/* line 20, ../sass/app/in.memberships.scss */
+.price-2 .plans .title .price {
+  font-size: 80px;
+}
+/* line 25, ../sass/app/in.memberships.scss */
+.price-2 .plan-highlight .description {
+  background: #F7F7F7;
+}
+/* line 28, ../sass/app/in.memberships.scss */
+.price-2 .plan-highlight .title {
+  background: #e74c3c;
+}
+/* line 32, ../sass/app/in.memberships.scss */
+.price-2 strike {
+  color: #34495e;
+}
+/* line 34, ../sass/app/in.memberships.scss */
+.price-2 strike span {
+  color: #ccc;
+}
+
+/* line 40, ../sass/app/in.memberships.scss */
+.price-2 .plans .description .description-box [class*="fui-"] {
+  font-size: 18px;
+}
+
+/* line 44, ../sass/app/in.memberships.scss */
+.price-2 .plans .description .description-box .fui-cross {
+  color: #e74c3c;
+}
+
+/* line 48, ../sass/app/in.memberships.scss */
+.price-2 .plans .description .description-box .fui-check {
+  color: #1abc9c;
+}

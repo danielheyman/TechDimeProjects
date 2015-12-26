@@ -1,0 +1,18 @@
+.website_url {
+	width: 255px;
+	height: 43px;
+
+	a{
+		overflow: hidden; 
+		display: inline-block; 
+		white-space: nowrap; 
+		width: 200px;
+		position: absolute;
+		background: inherit;
+		padding-right: 30px;
+	}
+}
+
+.right{
+	text-align:right;
+}

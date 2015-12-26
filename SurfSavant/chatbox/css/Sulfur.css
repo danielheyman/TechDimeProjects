@@ -1,0 +1,381 @@
+/*
+ * @package AJAX_Chat
+ * @author Sebastian Tschan
+ * @author Philip Nicolcev
+ * @copyright (c) Sebastian Tschan
+ * @license GNU Affero General Public License
+ * @link https://blueimp.net/ajax/
+ * 
+ * Color palette inspired by PunBB style "Sulfur":
+ * http://punbb.org/
+ */
+
+@import url('global.css');
+@import url('fonts.css');
+@import url('print.css');
+
+@media screen,projection,handheld {
+
+	/* Buttons */
+	#content #bbCodeContainer input, #content #logoutButton, #content #submitButton, #loginForm #loginButton {
+		background-color:#B84623;
+		color: #fff;
+		border: 1px solid #B84623;
+	}
+	#content select, #loginForm select, #loginForm input, #content textarea {
+		color:#333333;
+		border: 1px solid #B84623;
+	}
+	
+	/* Status Icon */
+	#content #statusIconContainer {
+		background-image: url('../img/loading-sprite.png'); 
+	}
+	#content .statusContainerOff {
+		background-position: 0px 0px;
+	}
+	#content .statusContainerOn {
+		background-position: 0px -22px;
+	}
+	#content .statusContainerAlert {
+		background-position: 0px -44px;
+	}
+	
+	/* Other Theme Elements */
+	#loginContent {
+		background-color:#F1F1F1;
+		color:#333333;
+	}
+	#loginContent h1 {
+		color:#333333;
+	}
+	#loginContent a {
+		color:#B84623;
+	}
+	#loginContent input, #loginContent select {
+		background-color:#FFF;
+		color:#333333;
+	}
+	#loginContent #errorContainer {
+		color:red;
+	}
+	#content {
+		background-color:#F1F1F1;
+		color:#333333;
+	}
+	#content h1 {
+		color:#333333;
+	}
+	#content a {
+		color:#B84623;
+	}
+	#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #colorCodesContainer, #content textarea {
+		border-color:#B84623;
+		background-color:#FFF;
+	}
+	#content #colorCodesContainer a {
+		border-color:black;
+	}
+	#content #optionsContainer input {
+	    background-color:transparent;
+	}
+	#content .rowEven {
+		background-color:#F1F1F1;
+	}
+	#content .rowOdd {
+		background-color:#DEDFDF;
+	}
+	#content .guest {
+		color:gray;
+	}
+	#content .user {
+		color:#000;
+	}
+	#content .moderator {
+		color:#00AA00;
+	}
+	#content .admin {
+		color:red;
+	}
+	#content .chatBot {
+		color:#B84623;
+	}
+	#content #chatList .chatBotErrorMessage {
+		color:red;
+	}
+	#content #chatList a {
+		color:#B84623;
+	}
+	#content #chatList .deleteSelected {
+		border-color:red;
+	}
+	#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
+		background-color:#B84623;
+		color:#FFF;
+	}
+}
+
+
+
+/*NEW*/
+/*NEW*/
+/*NEW*/
+/*NEW*/
+/*NEW*/
+/*NEW*/
+
+
+#content {
+    background:#fff;
+    color: #2f3840;
+    font-size: 12px;
+    font-family: arial,helvetica,sans-serif;
+}
+
+#content #chatList{
+    top:40px;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;   
+    -o-border-radius:2px;
+}
+
+#content #chatList div {
+    border-bottom: 1px solid #ccc;
+    padding:7px 5px;
+}
+
+#content .rowOdd {
+    background-color:#fff;
+   
+}
+
+#content .rowEven {
+    background-color:#F9F9FB;
+   
+}
+
+
+#content #onlineListContainer h3, #content #helpContainer h3, #content #settingsContainer h3 {
+    background-color: #efefef; 
+    color: #2f3840;
+    padding:10px 0;
+}
+
+#content .user {
+    color:#2f3840;   
+}
+
+#content .moderator, #content .admin {
+    color:#F90;   
+}
+
+#content.chatBot {
+    color:#B84623;
+}
+
+#content #chatList .user a {
+    color:#2f3840;   
+}
+
+#content #chatList .moderator a, #content #chatList .admin a {
+    color:#F90;   
+}
+
+#content #chatList .chatBot a {
+    color:#B84623;
+}
+
+#content #chatList, #content #onlineListContainer, #content #helpContainer, #content #settingsContainer, #content #colorCodesContainer, #content textarea{
+    border-color:#ccc;   
+}
+
+#content #chatList .privmsg, #content #chatList .chatBotMessage, #content #chatList .action {
+    font-style:normal;
+}
+
+#content #chatList span.chatBot {
+    font-style:normal;
+}
+
+#content #chatList span.dateTime {
+    font-size: 12px;
+    margin-left:5px;
+    font-style:italic;
+}
+
+#content select, #loginForm select, #loginForm input, #content textarea {
+    border: 1px solid #ccc;
+}
+
+#content #chatList .newline{
+    padding:0;
+    border:0;
+    margin:0;
+    margin-top:3px;
+}
+
+#content #onlineListContainer #onlineList, #content #helpContainer #helpList, #content #settingsContainer #settingsList {
+    top:35px;   
+}
+
+#content #onlineListContainer #onlineList div {
+    padding:10px;
+    font-size:12px;
+    border-bottom: 1px solid #ccc;
+}
+
+#content a {
+    color:#758fb5;   
+}
+
+#content #chatList {
+    right: 240px;
+    bottom: 160px;
+}
+
+#content #onlineListContainer
+{
+    top:40px;
+    bottom: 160px;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;   
+    -o-border-radius:2px;
+    font-size:12px;
+}
+
+textarea{
+    
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;   
+    -o-border-radius:2px;   
+}
+
+#statusIconContainer{
+    display:none;
+}
+
+#headlineContainer{
+    display:none;   
+}
+
+#content #logoutChannelContainer{
+    top:5px;   
+}
+
+#content #bbCodeContainer input, #content #logoutButton, #content #submitButton, #loginForm #loginButton {
+    background-color: #efefef; 
+    color: #2f3840;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;   
+    -o-border-radius:2px;
+    border: 1px solid #ccc;
+}
+
+#content #chatList .mentionbox {
+    display: block;
+    float: right;
+    width:10px;
+    height:10px;
+    font-size:8px;
+    line-height:10px;
+    overflow:hidden;
+    margin-top: 1px;
+    margin-left: 4px;
+    padding-left: 5px;
+    background: #767474;
+    color: #fff;
+    padding:2px;
+    padding-bottom:1px;
+    text-align:center;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;   
+    -o-border-radius:2px;
+    text-decoration:none;
+    display:none;
+    cursor:pointer;
+}
+
+#content #chatList .mentionbox:hover {
+    background: #464646;
+}
+
+#content #chatList .rowOdd:hover > .mentionbox, #content #chatList .rowEven:hover > .mentionbox {
+    display:block;
+}
+
+.green{
+    color:#4ec360;   
+}
+
+#content #logoutChannelContainer{
+    left:20px;
+    right:20px;
+    text-align:center;
+    top:6px;
+}
+
+#content #logoutChannelContainer select{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding:0;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -o-border-radius:2px;
+    -webkit-border-radius:2px;
+}
+
+#content #submitButtonContainer
+{
+    right:15px;
+}
+
+
+
+#content #optionsContainer
+{
+    right:20px;
+}
+
+#content #inputFieldContainer #inputField{
+    padding:2px;   
+}
+
+#content #chatList .optionsClass .options{
+    display:none;
+    padding:0px 10px;
+    background: #767474;
+    color: #fff;
+    border-radius:2px;
+    -moz-border-radius:2px;
+    -webkit-border-radius:2px;   
+    -o-border-radius:2px;
+    text-decoration:none;
+    display:none;
+    cursor:pointer;
+    position:absolute;
+    font-size:11px;
+    line-height:13px;
+}
+
+#content #chatList .optionsClass .options2{
+    margin-left:80px;
+}
+
+#content #chatList .optionsClass:hover > .options {
+    display:inline-block;
+}
+
+#content #chatList .optionsClass:hover > .message{
+    visibility: hidden;
+}
+
+#content #inputFieldContainer #inputField{
+    resize:none;
+    font-size: 12px;
+}

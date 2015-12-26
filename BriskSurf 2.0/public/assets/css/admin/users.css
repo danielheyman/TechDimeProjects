@@ -1,0 +1,24 @@
+form .box{
+	width:400px;
+	border-bottom: 0;
+}
+
+form .login{
+	width:442px;
+}
+
+table tr td:first-child {
+	width:auto!important;
+}
+
+table td.height{
+	line-height: 50px!important;
+}
+
+.list{
+	display: inline-block;
+	padding: 5px 10px;
+	border-radius: 10px;
+	background: #eee;
+	color: #666;
+}

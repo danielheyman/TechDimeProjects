@@ -1,0 +1,162 @@
+body{
+	color: #666;
+	font-size: 14px;
+	background: #f8f8f8;
+}
+
+.options{
+	overflow: hidden;
+	margin-top: 10px;
+	font-size: 13px;
+}
+
+.options .section .title{
+	padding: 15px 25px;
+	border-bottom: 1px solid #ccc;
+}
+
+.options .section .inner{
+	padding: 25px;
+}
+
+.options .section p{
+	font-weight: bold;
+	margin: 0;
+	margin-bottom: 15px;
+}
+
+.options .section .second{
+	margin-top: 15px;
+	border-top: 1px solid #ccc;
+	padding-top: 15px;
+}
+
+.options .section select, .options .section input{
+	width: 200px;
+	border: 1px solid #ccc;
+	height: 30px;
+	border-radius: 5px;
+	background: #fefefe;
+}
+
+.options .section input{
+	width: 100px;
+	padding: 0;
+	padding-left: 5px;
+	height: 26px;
+}
+
+.name{
+	margin-left: 20px;
+	display: inline-block;
+	width:300px;
+	border:1px solid #ccc;
+	border-radius: 5px;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.options .section .info{
+	display: inline-block;
+}
+
+.section{
+	background: #eee;
+	border: 1px solid #ddd;
+}
+
+.section .title{
+	cursor: pointer;
+}
+
+.section:hover{
+	background: #fff;
+}
+
+.section .inner{
+	display: none;
+}
+
+.section.show{
+	background: #fff;
+}
+
+.section.show .title{
+	background: #fefefe;
+}
+
+.section.show .inner{
+	display: inline-block;
+}
+
+.section .title .desc{
+	display: inline;
+}
+
+.section .title .delete{
+	float:right;
+	color: #333;
+}
+
+.section .title .delete:hover{
+	color: #AE3427;
+}
+
+.or{
+	background: #eee;
+	border-top: 1px solid #ddd;
+	cursor: pointer;
+	padding: 15px;
+	border: 1px solid #ddd;
+	width: 70px;
+	padding: 5px 10px;
+}
+
+.or:hover{
+	background: #fff;
+}
+
+#action_data, #attribute_data{
+	display: none;
+}
+
+.section.orText .title:before{
+	content: "OR ";
+}
+
+.options.andText::before{
+	content: "AND";
+	padding-left: 15px;
+	border-left: 1px solid #ddd;
+	line-height: 50px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+button{
+	border: 1px solid #ddd;
+	padding: 5px 10px;
+	border-radius: 3px;
+	background: #fff;
+}
+
+button:hover{
+	background: #ddd;
+	cursor: pointer;
+}
+
+.right{
+	margin-left: 30px;
+	float: right;
+	margin-top: 0px;
+}
+
+b, p{
+	color: #333;
+}
+
+.and{
+	margin-top: 50px;
+}
+
+

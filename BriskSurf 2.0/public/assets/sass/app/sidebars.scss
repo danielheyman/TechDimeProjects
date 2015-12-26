@@ -1,0 +1,215 @@
+@import '../lib/mixins.scss';
+
+#tasks, #messages{
+	position: absolute;
+	top: 20px;
+	z-index: 101;
+	color: #fff;
+	font-size: 25px;
+
+	a, i{
+		color: #ffffff;
+		cursor: pointer;
+
+		&:hover{
+			color: #ccc;
+		}
+	}
+
+	span{
+		background: #3498db;
+	}
+
+	&:hover{
+		span{
+			background: #3088C3;
+			width:20px;
+			height:20px;
+			line-height: 20px;
+		}
+	}
+}
+
+#tasks{
+	left: 20px;
+
+	span{
+		right: -14px;
+	}
+}
+
+#messages{
+	right: 20px;
+
+	span{
+		right: 13px;
+	}
+}
+
+#tasks_sidebar, #messages_sidebar{
+	width:250px;
+	top:80px;
+	bottom:100px;
+	color: #34495e;
+	z-index: 100;
+	overflow: hidden;
+	position: absolute;
+	@include transition(0.5s 0s ease);
+	overflow: auto;
+
+	.inner{
+		background: #ECF0F1;
+		position: absolute;
+		width:250px;
+		height:100%;
+	}
+
+	.item{
+		margin:0;
+		font-size:13px;
+		background: #fff;
+		padding: 23px 13px;
+		margin: 7px;
+		z-index: 1;
+		position: relative;
+		margin: 0;
+		padding: 25px 15px;
+		@include box-shadow(0px 0px 2px rgba(#000, 0.3));
+		@include transition(
+			box-shadow 0.7s 0.01s $easeOutExpo
+		);
+
+		&:hover{
+			@include box-shadow(0px 0px 4px rgba(#000, 1));
+			z-index:2;
+
+			.options, .time{
+				@include opacity(1);
+			}
+		}
+
+		.time{
+			display: inline;
+			float:right;
+			font-size:12px;
+			font-weight: normal;
+			margin-top:2px;
+			@include opacity(0.3);
+			color: #888;
+			margin-left: 20px;
+		}
+
+		.title{
+			font-size:15px;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		.options{
+			margin-top:5px;
+			font-size: 12px;
+			@include opacity(0.3);
+
+			i{
+				margin-top:5px;
+				margin-right:5px;
+				color: #888;
+
+				&.margin{
+					margin-left:10px;
+				}
+			}
+
+			a{
+				color: #888;
+
+				&:hover{
+					color: #16a085;
+					i{
+						color: #16a085;
+					}
+				}
+			}
+		}
+	}
+}
+
+#tasks_sidebar{
+	left: 0;
+	@include box-shadow(1px 0px 5px rgba(0, 0, 0, 0.5));
+
+	.item{
+		.progress{
+			margin:0;
+			margin-top:10px;
+			background: #aaa;
+
+			div{
+				background: #34495e;
+			}
+		}
+	}
+}
+
+#messages_sidebar{
+	right:0;
+	@include box-shadow(-1px 0px 5px rgba(0, 0, 0, 0.5));
+
+	.item{
+		cursor: pointer;
+
+		.type_data, .type_data_title{
+			display: none;
+		}
+
+		&.special{
+			background: #ffeb3b;
+		}
+	}
+}
+
+#tasks_menu, #notifications_menu{
+	display: none;
+	cursor: pointer;
+
+	span{
+		top: 20px;
+		right: -15px;
+	}
+}
+
+
+@media (max-width: 1500px) {
+	#messages_sidebar, #tasks_sidebar{
+		@include opacity(0);
+		&.pop{
+			@include opacity(1);
+		}
+	}
+
+	#tasks_sidebar{
+		left:-250px;
+	}
+
+	#tasks_sidebar.pop{
+		left: 0;
+	}
+
+	#messages_sidebar{
+		width: 0px;
+	}
+
+	#messages_sidebar.pop{
+		width: 250px;
+	}
+}
+
+@media (max-width: 1100px) {
+	#tasks, #messages{
+		display: none;
+	}
+
+	#tasks_menu, #notifications_menu{
+		display: block;
+	}
+}
